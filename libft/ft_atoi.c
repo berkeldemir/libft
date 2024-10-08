@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
+/*   By: beldemir <beldemir@k1m23s10.42istanbul.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 12:58:27 by beldemir          #+#    #+#             */
-/*   Updated: 2024/09/21 13:08:49 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:09:12 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int ft_atoi(char *str)
     long    i;
     long    num;
     int     isneg;
-
+    
     i = 0;
     num = 0;
     isneg = 1;
