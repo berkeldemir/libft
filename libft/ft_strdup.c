@@ -6,13 +6,13 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 19:15:17 by beldemir          #+#    #+#             */
-/*   Updated: 2024/08/28 19:20:17 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/10 11:14:55 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(char *s)
+char *ft_strdup(const char *s)
 {
     int i;
     char *toreturn;
