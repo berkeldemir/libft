@@ -6,19 +6,26 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 13:55:58 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/10 14:09:34 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/10 21:57:21 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+#include <stdio.h>
 
 char    *ft_strchr(const char *s, int c)
 {
-    if (c == '\0')
-        return (s);
-    while (*s != c && *s != '\0')
+    while (*s != c && *s != 0)
         s++;
     if (*s == c)
-        return (s);
+        return ((char *)s);
     return (NULL);
+}
+
+int main(void)
+{
+    char *a = "berkecan";
+    printf("%s\n", strchr(a, '\0'));
+    printf("%s\n", ft_strchr(a, '\0'));
 }

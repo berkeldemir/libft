@@ -12,7 +12,8 @@ $(NAME): $(OBJS)
 	ar rc $@ $^
 	
 %.o : %.c
-	$(COMPILER) $(FLAGS)
+	$(COMPILER) $(FLAGS) $< -o $@
+ 
 bonus:
 	gcc $(FLAG) -c $(BONUS)
 	ar rc $(NAME) *.o
