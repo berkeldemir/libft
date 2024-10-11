@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 19:14:27 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/10 21:35:46 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:50:21 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
         dst[dstlen + j] = src[j];
         j++;
     }
-    if ((dst_len + j) < dstsize)
+    if ((dstlen + j) < dstsize)
         dst[dstlen + j] = '\0';
     return (dstlen + srclen);
 }

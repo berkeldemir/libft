@@ -6,11 +6,9 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 18:54:20 by beldemir          #+#    #+#             */
-/*   Updated: 2024/09/05 20:01:37 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:59:21 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int i)
 {

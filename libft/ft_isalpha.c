@@ -6,11 +6,9 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 18:35:45 by beldemir          #+#    #+#             */
-/*   Updated: 2024/08/28 18:41:11 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:58:52 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int ft_isalpha(int i)
 {
