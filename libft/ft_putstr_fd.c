@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 09:27:13 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/12 09:28:13 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/12 11:22:16 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 void    ft_putstr_fd(char *str, int fd)
 {
-    while (str)
-    {
-        ft_putchr_fd(*str, fd);
-        str++;
-    }
-    *str == '\0';
+	if (!s)
+		return ;
+	write(fd, s, ft_strlen(s));
 }

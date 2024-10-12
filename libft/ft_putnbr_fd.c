@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 09:33:44 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/12 09:43:31 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/12 11:20:19 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,21 @@
 
 void    ft_putnbr_fd(int n, int fd)
 {
-    write
-}
-
-void    ft_putnbr_fd(int nb, int fd)
-{
-	if (nb == -2147483648)
+	if (n == -2147483648)
 	{
-		write(fd, "-2", 2);
-		nb = 147483648;
+		ft_putstr_fd("-2147483648", fd);
 	}
-	if (nb < 0)
+	if (n < 0)
 	{
 		write(fd, '-', 1);
-		nb *= -1;
+		n *= -1;
 	}
-	if (nb < 10)
+	if (n < 10)
 	{
-		ft_putchr_fd(nb + 48, fd);
+		ft_putchr_fd(n + '0', fd);
 		return;
 	}
 	else
-		ft_putnbr_fd(nb / 10, fd);
-	ft_putnbr_fd(nb % 10, fd);
+		ft_putnbr_fd(n / 10, fd);
+	ft_putnbr_fd(n % 10, fd);
 }
-
-// NOT SURE YET
