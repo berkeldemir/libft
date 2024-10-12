@@ -1,38 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/10 14:06:09 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/11 23:29:37 by beldemir         ###   ########.fr       */
+/*   Created: 2024/10/11 17:15:00 by beldemir          #+#    #+#             */
+/*   Updated: 2024/10/11 23:01:46 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+void	*ft_calloc(size_t count, size_t size)
 {
-    char *lastonefound;
+	void	*ret;
 
-    lastonefound = NULL;
-    while (*s != '\0')
-    {
-        if (*s == (char)c)
-            lastonefound = (char *)s;
-        s++;
-    }
-    if (c == '\0')
-        return ((char *)s);
-    return lastonefound;
-}
-
-#include <stdio.h>
-
-int main()
-{
-    char *name = "menemen";
-    
-    printf("%s", ft_strrchr(name, 'e'));
+	ret = malloc(size * count);
+	if (!ret)
+		return (0);
+	ft_bzero(ret, size * count);
+	return (ret);
 }

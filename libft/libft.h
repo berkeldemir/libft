@@ -19,4 +19,7 @@ int     ft_atoi(char *str);
 int     ft_strlen(char *str);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 char	*ft_strdup(char *s);
+
+void	*ft_calloc(size_t count, size_t size);
+
 #endif

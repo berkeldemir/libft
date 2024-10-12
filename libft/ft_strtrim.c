@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/10 14:06:09 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/11 23:29:37 by beldemir         ###   ########.fr       */
+/*   Created: 2024/10/11 17:35:05 by beldemir          #+#    #+#             */
+/*   Updated: 2024/10/11 23:21:55 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+static int	ft_isset(char c, const char *set)
 {
-    char *lastonefound;
-
-    lastonefound = NULL;
-    while (*s != '\0')
-    {
-        if (*s == (char)c)
-            lastonefound = (char *)s;
-        s++;
-    }
-    if (c == '\0')
-        return ((char *)s);
-    return lastonefound;
+	while (*set)
+		if (c == *set++)
+			return (1);
+	return (0);
 }
 
-#include <stdio.h>
+// EĞER KARAKTER BULUNURSA 0, BULUNAMAZSA 1 DÖNDÜRÜYOR
 
-int main()
+char    *ft_strtrim(char const *s1, char const *set)
 {
-    char *name = "menemen";
-    
-    printf("%s", ft_strrchr(name, 'e'));
+    char    *new;
+    size_t  memsize;
+    size_t  i;
+
+    memsize = 1;
+    i = 0;
+    while (s1[i])
+        if(ft_isset(set[i], set))
 }
