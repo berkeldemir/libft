@@ -15,26 +15,15 @@ $(NAME): $(OBJS)
 	$(COMPILER) $(FLAGS) $< -o $@
  
 bonus:
-	gcc $(FLAG) -c $(BONUS)
+	gcc $(FLAGS) -c $(BONUS)
 	ar rc $(NAME) *.o
+
 clean:
 	/bin/rm -f  *.o
+
 fclean: clean
 	/bin/rm -f $(NAME)
+
 re: fclean all
 
 .PHONY: all bonus clean fclean re
-
-
-
-clean:
-	rm -rf *.o
-
-fclean:
-	???
-
-re:
-	rm -rf *.o
-	make all
-
-.PHONY: all re clean fclean

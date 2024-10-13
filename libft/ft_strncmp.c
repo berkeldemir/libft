@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:51:15 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/12 12:25:38 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/13 15:27:37 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,4 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		n--;
 	}
 	return (0);
-}
-#include <stdio.h>
-int	main(void)
-{
-	printf("%i\n", ft_strncmp("apple", "apricot", 6));
 }

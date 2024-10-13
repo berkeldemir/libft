@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/13 15:33:37 by beldemir          #+#    #+#             */
+/*   Updated: 2024/10/13 15:33:59 by beldemir         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
@@ -15,8 +27,8 @@ int		ft_isascii(int i);
 int		ft_isalpha(int i);
 int		ft_isalnum(int i);
 
-int     ft_atoi(char *str);
-int     ft_strlen(char *str);
+int		ft_atoi(char *str);
+int		ft_strlen(char *str);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 char	*ft_strdup(char *s);
 

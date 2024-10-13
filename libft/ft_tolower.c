@@ -6,15 +6,15 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 19:00:47 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/11 16:53:35 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/13 15:31:20 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int i)
+int	ft_tolower(int i)
 {
-    if (i <= 'Z' && i >= 'A')
-        i += 32;
-    return (i);
+	if (i <= 'Z' && i >= 'A')
+		i += 32;
+	return (i);
 }

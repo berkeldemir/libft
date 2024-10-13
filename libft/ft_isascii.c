@@ -6,13 +6,13 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 18:41:20 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/11 16:58:40 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/13 15:16:36 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int i)
+int	ft_isascii(int i)
 {
-    if (i <= 127 && i >= 0)
-        return (1);
-    return (0);
+	if (i <= 127 && i >= 0)
+		return (1);
+	return (0);
 }
