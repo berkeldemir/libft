@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 17:35:05 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/13 15:30:07 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/13 19:51:26 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1) - 1;
 	start = 0;
 	while (s1[start] && ft_strchr(set, s1[start]))
-		++start;
+		start++;
 	while (s1[end] && ft_strchr(set, s1[end]))
-		--end;
+		end--;
 	new = ft_substr(s1, start, end - start + 1);
 	return (new);
 }

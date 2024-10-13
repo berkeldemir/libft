@@ -1,5 +1,5 @@
 NAME = libft.a
-COMPILER = gcc
+CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRC = $(shell find . ! -name "ft_lst*.c" -name "ft_*.c")
 BONUS = $(shell find . -name "ft_lst*.c")
@@ -11,9 +11,6 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rc $@ $^
 	
-%.o : %.c
-	$(COMPILER) $(FLAGS) $< -o $@
- 
 bonus:
 	gcc $(FLAGS) -c $(BONUS)
 	ar rc $(NAME) *.o
@@ -22,7 +19,7 @@ clean:
 	/bin/rm -f  *.o
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -rf $(NAME)
 
 re: fclean all
 

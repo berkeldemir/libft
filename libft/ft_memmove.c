@@ -5,12 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 16:49:56 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/13 15:20:19 by beldemir         ###   ########.fr       */
+/*   Created: 2024/10/13 19:48:29 by beldemir          #+#    #+#             */
+/*   Updated: 2024/10/13 19:49:40 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	*ft_memmove(void *s1, const void *s2, size_t len)
 {
