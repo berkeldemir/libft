@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 20:01:04 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/13 20:46:01 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:16:08 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	ft_findsize(int n)
 	int	size;
 
 	size = 0;
-	if (n < 0)
+	if (n <= 0)
 	{
 		size++;
 		n *= -1;
@@ -31,40 +31,32 @@ static int	ft_findsize(int n)
 	return (size);
 }
 
-static void	ft_writenew(int	n, char **str)
-{
-	int	sign;
-	int	i;
-	int	temp;
-	
-	sign = 1;
-	i = 0;
-	if (n < 0)
-	{
-		sign *= -1;
-		n *= -1;
-	}
-	while (n > 0)
-}
-
 char	*ft_itoa(int n)
 {
 	char	*new;
-	int		index;
 	int		size;
+	long	num;
 	
 	size = ft_findsize(n);
-	index = 0;
-	if (n == 0)
+	num = (long)n;
+	if(n == -2147483648)
 	{
-		new = (char *)malloc(2);
-		new = "0";
+		new = (char *)malloc(sizeof(char) * 12);
+		new = "-2147483648";
 		return (new);
 	}
+	if (n < 0)
+		num *= -1;
 	new = (char *)malloc(sizeof(char) * (size + 1));
 	if (!new)
 		return (NULL);
-	ft_writenew(n, &new, size);
+	while (--size >= 0)
+	{
+		new[size] = (num % 10) + '0';
+		num /= 10;
+	}
+	if (n < 0)
+		new[0] = '-';
 	return (new);
 }
 
@@ -72,6 +64,6 @@ int	main(void)
 {
 	int	n;
 
-	n = -12982;
+	n = -2147483648;
 	printf("%i\n%i\n%s\n", ft_findsize(n), n, ft_itoa(n));
 }
