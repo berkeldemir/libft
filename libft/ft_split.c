@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:39:31 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/13 19:16:28 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:59:08 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	**ft_split(char const *s, char c)
 	new = (char **)malloc(sizeof(char *) * (size + 1));
 	if (!new)
 		return (NULL);
-	//ft_write_new(new, s, c);
+	ft_write_new(new, s, c);
 	return (new);
 }
 #include <stdio.h>
