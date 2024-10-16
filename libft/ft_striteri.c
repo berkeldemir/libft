@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 16:46:41 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/15 14:27:00 by beldemir         ###   ########.fr       */
+/*   Created: 2024/10/15 16:17:46 by beldemir          #+#    #+#             */
+/*   Updated: 2024/10/15 16:22:06 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_striteri(char *str, void (*f)(unsigned int, char *))
 {
-	ft_memset(s, 0, n);
+	size_t	i;
+
+	i = 0;
+	if (!s)
+		return ;
+	while (str[i] != '\0')
+	{
+		(f)(i, &str[i]);
+		i++;
+	}
 }

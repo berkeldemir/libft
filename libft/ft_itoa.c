@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 20:01:04 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/14 18:16:08 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:31:45 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,10 @@ char	*ft_itoa(int n)
 	char	*new;
 	int		size;
 	long	num;
-	
+
 	size = ft_findsize(n);
 	num = (long)n;
-	if(n == -2147483648)
+	if (n == -2147483648)
 	{
 		new = (char *)malloc(sizeof(char) * 12);
 		new = "-2147483648";
@@ -58,12 +58,4 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		new[0] = '-';
 	return (new);
-}
-
-int	main(void)
-{
-	int	n;
-
-	n = -2147483648;
-	printf("%i\n%i\n%s\n", ft_findsize(n), n, ft_itoa(n));
 }

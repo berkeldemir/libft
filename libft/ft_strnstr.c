@@ -6,22 +6,45 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:51:37 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/13 15:37:27 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:42:00 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strnstr(const char *main, const char *sub, size_t len)
+char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
-	int	i;
+	size_t		i;
+	size_t		j;
+	char		*found;
 
+	if (s2[0] == '\0')
+		return ((char *)s1);
 	i = 0;
-	if (*sub == '\0')
-		return ((char *)main);
-	while (i < len && sub[i] != '\0')
+	while (i < len && s1[i] != '\0')
 	{
-		return (0);
+		j = 0;
+		if (s1[i] == s2[j])
+		{
+			found = (char *)&s1[i];
+			while (s1[i] == s2[j])
+			{
+				if (s2[j + 1] == '\0')
+					return (found);
+				i++;
+				j++;
+			}
+			found = NULL;
+		}
+		i++;
 	}
 	return (NULL);
+}
+#include <stdio.h>
+int main(void)
+{
+	char	*result;
+	
+	result = ft_strnstr("berk muzaffer eldemir", "ff", 9);
+	printf("result: %s\n", result);
 }

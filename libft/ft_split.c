@@ -6,19 +6,19 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:39:31 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/14 17:50:20 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:21:50 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_numof_words(char const *str, char sep)
+static int	ft_count_words(char const *str, char sep)
 {
-	size_t	word_counter;
+	int	word_counter;
 
 	word_counter = 0;
 	if (!str)
-		word_counter = 1; //////////???????
+		return (0);
 	while (*str != '\0')
 	{
 		if (*(str + 1) != '\0' && *(str + 1) != sep && *str == sep)
@@ -28,23 +28,45 @@ static size_t	ft_numof_words(char const *str, char sep)
 	return (word_counter);
 }
 
-char	**ft_split(char const *s, char c)
+static int	ft_wordlen(char const *s, char sep)
+{
+	int	count;
+
+	count = 0;
+	if (!s)
+		return (0);
+	while (*s != '\0' && *s != sep)
+	{
+		count++;
+		s++;
+	}
+	return (count);
+}
+
+char	**ft_split(char const *s, char sep)
 {
 	char	**new;
-	int		size;
+	int		i;
+	int		j;
+	int		words_count;
 
+	i = 0;
+	j = 0;
+	words_count = ft_count_words(s, sep);
 	if (!s)
 		return (NULL);
-	size = ft_numof_words(s, c);
-	new = (char **)malloc(sizeof(char *) * (size + 1));
+	new = (char **)malloc(sizeof(char *) * (words_count + 1));
 	if (!new)
 		return (NULL);
-	//ft_write_new(new, s, c);
+	while (i <= words_count)
+	{
+		while (s[j] == sep)
+			j++;
+		new[i] = ft_substr(s, j, ft_wordlen(&s[j], sep));
+		if (!new[i])
+			return (NULL);
+		j += ft_wordlen(&s[j], sep);
+		i++;
+	}
 	return (new);
-}
-#include <stdio.h>
-int	main(void)
-{
-	char	*name = "yunus";
-	printf("%zu\n", ft_numof_words(name, 'e'));
 }
