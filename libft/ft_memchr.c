@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:48:39 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/13 15:18:12 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/16 16:04:04 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if ((unsigned char)str[i] == (unsigned char)c)
-			return (&s[i]);
+			return ((void *)&s[i]);
 		else
 			i++;
 	}
