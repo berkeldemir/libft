@@ -6,12 +6,11 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 17:35:05 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/16 19:14:50 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/17 13:01:39 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -31,12 +30,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	new = ft_substr(s1, start, end - start + 1);
 	return (new);
-}
-#include <stdio.h>
-int	main(void)
-{
-	char	*str = "EY EDİP ADAN EYDİ ADA PİDE YE";
-	char	*find = "EY Dİ";
-
-	printf("%s\n", ft_strtrim(str, find));
 }

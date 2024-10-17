@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 16:17:46 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/16 16:07:16 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/17 13:22:05 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 void	ft_striteri(char *str, void (*f)(unsigned int, char *))
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
-	if (!str)
-		return ;
+	if (!str || !f)
+		return (NULL);
 	while (str[i] != '\0')
 	{
 		(f)(i, &str[i]);
 		i++;
 	}
 }
+ft_striteri(s,);
