@@ -6,7 +6,11 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:39:31 by beldemir          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2024/10/15 14:21:50 by beldemir         ###   ########.fr       */
+=======
+/*   Updated: 2024/10/14 18:59:08 by beldemir         ###   ########.fr       */
+>>>>>>> a53062d62ca5470528fcea91928316d5d11be52e
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +62,7 @@ char	**ft_split(char const *s, char sep)
 	new = (char **)malloc(sizeof(char *) * (words_count + 1));
 	if (!new)
 		return (NULL);
+<<<<<<< HEAD
 	while (i <= words_count)
 	{
 		while (s[j] == sep)
@@ -68,5 +73,8 @@ char	**ft_split(char const *s, char sep)
 		j += ft_wordlen(&s[j], sep);
 		i++;
 	}
+=======
+	ft_write_new(new, s, c);
+>>>>>>> a53062d62ca5470528fcea91928316d5d11be52e
 	return (new);
 }
