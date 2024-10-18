@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:51:37 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/17 17:53:45 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/19 00:23:57 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,9 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 		if (s1[i] == s2[j])
 		{
 			found = (char *)&s1[i];
-			while (s1[i] == s2[j] && i < len)
-			{
-				if (s2[j + 1] == '\0')
+			while (s1[i + j] == s2[j] && (i + j) < len)
+				if (s2[++j] == '\0')
 					return (found);
-				i++;
-				j++;
-			}
-			found = NULL;
 		}
 		i++;
 	}

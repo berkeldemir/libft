@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 16:13:05 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/17 13:28:05 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/19 01:27:33 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,17 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char			*str;
+	char			*new;
 
-	if (!s || !f)
+	new = (char *)malloc(ft_strlen(s) + 1);
+	if (new == NULL)
 		return (NULL);
 	i = 0;
-	str = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
-	if (!str)
-		return (NULL);
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		str[i] = (f)(i, str[i]);
+		new[i] = f(i, s[i]);
 		i++;
 	}
-	str[i] = '\0';
-	return (str);
+	new[i] = '\0';
+	return (new);
 }

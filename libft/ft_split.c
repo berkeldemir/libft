@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:39:31 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/18 22:32:19 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/19 01:36:10 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ static int	ft_count_words(char const *s, char sep)
 	int	count;
 
 	count = 0;
-	if (sep == 0)
-		return (0);
+	if (sep == '\0')
+		return (1);
 	while (*s)
 	{
 		if (*s != sep && (*(s + 1) == sep || *(s + 1) == '\0'))
@@ -30,13 +30,13 @@ static int	ft_count_words(char const *s, char sep)
 
 char	**ft_split(char const *s, char c)
 {
-	char	**buffer;
+	char	**words;
 	size_t	word_len;
 	size_t	i;
 
 	i = 0;
-	buffer = (char **)malloc((ft_count_words(s, c) + 1) * sizeof(char *));
-	if (buffer == NULL)
+	words = (char **)malloc((ft_count_words(s, c) + 1) * sizeof(char *));
+	if (words == NULL)
 		return (NULL);
 	while (*s)
 	{
@@ -48,10 +48,11 @@ char	**ft_split(char const *s, char c)
 				word_len = ft_strlen(s);
 			else
 				word_len = ft_strchr(s, c) - s;
-			buffer[i++] = ft_substr(s, 0, word_len);
+			words[i] = ft_substr(s, 0, word_len);
+			i++;
 			s += word_len;
 		}
 	}
-	buffer[i] = NULL;
-	return (buffer);
+	words[i] = NULL;
+	return (words);
 }

@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:06:09 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/13 15:29:46 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/18 23:56:20 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,17 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*lastonefound;
+	unsigned char	*lastonefound;
 
 	lastonefound = NULL;
+	c = (unsigned char)c;
 	while (*s != '\0')
 	{
 		if (*s == (char)c)
-			lastonefound = (char *)s;
+			lastonefound = (unsigned char *)s;
 		s++;
 	}
 	if (c == '\0')
 		return ((char *)s);
-	return (lastonefound);
+	return ((char *)lastonefound);
 }

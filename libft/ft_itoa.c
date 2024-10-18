@@ -6,14 +6,15 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 20:01:04 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/18 23:01:32 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/19 01:04:31 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "libft.h"
 
-static int	ft_findsize(long n)
+static int	ft_findsize(int n)
 {
 	int	size;
 
@@ -31,21 +32,20 @@ static int	ft_findsize(long n)
 	return (size);
 }
 
-static char	*ft_writenum(char *ptr, long num, int size)
+static char	*ft_writenum(char *ptr, int num, int size)
 {
 	int	sign;
 
 	sign = 1;
 	if (num < 0)
 	{
-		sign *= -1;
-		num *= -1;
+		sign = -1;
+		num = -num;
 	}
 	ptr[size] = '\0';
-	while ((sign == 1 && size >= 0) || (sign == -1 && size > 0))
+	while (size > 0)
 	{
-		size--;
-		ptr[size] = (num % 10) + '0';
+		ptr[--size] = (num % 10) + '0';
 		num /= 10;
 	}
 	if (sign == -1)
@@ -57,13 +57,13 @@ char	*ft_itoa(int n)
 {
 	char	*new;
 	int		size;
-	long	num;
 
-	num = (long)n;
-	size = ft_findsize(num);
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	size = ft_findsize(n);
 	new = (char *)malloc(sizeof(char) * (size + 1));
 	if (!new)
 		return (NULL);
-	new = ft_writenum(new, num, size);
+	new = ft_writenum(new, n, size);
 	return (new);
 }

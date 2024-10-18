@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 09:33:44 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/16 16:06:07 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/19 00:42:01 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n == -2147483648)
 	{
 		ft_putstr_fd("-2147483648", fd);
+		return ;
 	}
 	if (n < 0)
 	{
