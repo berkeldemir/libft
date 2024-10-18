@@ -6,14 +6,14 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 20:01:04 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/17 17:35:00 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/18 23:01:32 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-static int	ft_findsize(int n)
+static int	ft_findsize(long n)
 {
 	int	size;
 
@@ -31,7 +31,7 @@ static int	ft_findsize(int n)
 	return (size);
 }
 
-static char	*ft_writenum(char *ptr, int num, int size)
+static char	*ft_writenum(char *ptr, long num, int size)
 {
 	int	sign;
 
@@ -57,17 +57,13 @@ char	*ft_itoa(int n)
 {
 	char	*new;
 	int		size;
+	long	num;
 
-	size = ft_findsize(n);
-	if (n == -2147483648)
-	{
-		new = (char *)malloc(sizeof(char) * 12);
-		new = "-2147483648";
-		return (new);
-	}
+	num = (long)n;
+	size = ft_findsize(num);
 	new = (char *)malloc(sizeof(char) * (size + 1));
 	if (!new)
 		return (NULL);
-	new = ft_writenum(new, n, size);
+	new = ft_writenum(new, num, size);
 	return (new);
 }

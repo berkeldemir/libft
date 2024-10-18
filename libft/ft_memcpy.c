@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:50:00 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/17 17:36:46 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/18 23:11:50 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*d;
 	char	*s;
 
+	if (!src && !dst)
+		return (dst);
 	i = 0;
 	d = (char *)dst;
 	s = (char *)src;

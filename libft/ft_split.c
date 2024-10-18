@@ -6,67 +6,52 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:39:31 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/17 17:37:31 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/18 22:32:19 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_count_words(char const *str, char sep)
-{
-	int	word_counter;
-
-	word_counter = 0;
-	if (!str)
-		return (0);
-	while (*str != '\0')
-	{
-		if (*(str + 1) != '\0' && *(str + 1) != sep && *str == sep)
-			word_counter++;
-		str++;
-	}
-	return (word_counter);
-}
-
-static int	ft_wordlen(char const *s, char sep)
+static int	ft_count_words(char const *s, char sep)
 {
 	int	count;
 
 	count = 0;
-	if (!s)
+	if (sep == 0)
 		return (0);
-	while (*s != '\0' && *s != sep)
+	while (*s)
 	{
-		count++;
+		if (*s != sep && (*(s + 1) == sep || *(s + 1) == '\0'))
+			count++;
 		s++;
 	}
 	return (count);
 }
 
-char	**ft_split(char const *s, char sep)
+char	**ft_split(char const *s, char c)
 {
-	char	**new;
-	int		i;
-	int		j;
-	int		words_count;
+	char	**buffer;
+	size_t	word_len;
+	size_t	i;
 
 	i = 0;
-	j = 0;
-	words_count = ft_count_words(s, sep);
-	if (!s)
+	buffer = (char **)malloc((ft_count_words(s, c) + 1) * sizeof(char *));
+	if (buffer == NULL)
 		return (NULL);
-	new = (char **)malloc(sizeof(char *) * (words_count + 1));
-	if (!new)
-		return (NULL);
-	while (i <= words_count)
+	while (*s)
 	{
-		while (s[j] == sep)
-			j++;
-		new[i] = ft_substr(s, j, ft_wordlen(&s[j], sep));
-		if (!new[i])
-			return (NULL);
-		j += ft_wordlen(&s[j], sep);
-		i++;
+		while (*s == c && *s)
+			s++;
+		if (*s)
+		{
+			if (ft_strchr(s, c) == NULL)
+				word_len = ft_strlen(s);
+			else
+				word_len = ft_strchr(s, c) - s;
+			buffer[i++] = ft_substr(s, 0, word_len);
+			s += word_len;
+		}
 	}
-	return (new);
+	buffer[i] = NULL;
+	return (buffer);
 }
