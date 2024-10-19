@@ -12,7 +12,7 @@ $(NAME): $(OBJS)
 		ar rcs $(NAME) $(OBJS)
 
 bonus: $(OBJS) $(OBJS_BONUS)
-		$(MAKE) $(OBJS_BONUS)
+		$(CC) $(CFLAGS) -c $(SRCS_BONUS)
 		ar rcs $(NAME) $(OBJS_BONUS)
 
 clean:
