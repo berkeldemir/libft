@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 01:51:59 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/19 02:01:42 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/19 03:43:30 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 t_list	*ft_lstnew(void	*content)
 {
-	t_list	new_item;
+	t_list	*new;
 
-	new_item = (t_list)malloc(sizeof(t_list));
-	if (!new_item)
+	new = (t_list *)malloc(sizeof(t_list));
+	if (!new)
 		return (NULL);
-	new_item->content = content;
-	new_item->next = NULL;
-	return (new_item);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
