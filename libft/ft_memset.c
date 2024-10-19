@@ -6,7 +6,7 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:20:31 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/15 14:32:00 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/19 08:12:13 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*p;
+	unsigned char	*p;
 
-	p = (char *)b;
+	p = (unsigned char *)b;
 	while (len > 0)
 	{
 		p[len - 1] = c;
