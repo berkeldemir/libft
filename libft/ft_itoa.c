@@ -6,12 +6,10 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 20:01:04 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/19 01:04:31 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/10/21 13:45:22 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	ft_findsize(int n)

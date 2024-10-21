@@ -11,8 +11,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 		ar rcs $(NAME) $(OBJS)
 
-bonus: $(OBJS) $(OBJS_BONUS)
-		$(CC) $(CFLAGS) -c $(SRCS_BONUS)
+bonus: $(OBJS_BONUS)
 		ar rcs $(NAME) $(OBJS_BONUS)
 
 clean:
