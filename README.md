@@ -19,8 +19,7 @@
 -  [Hints / İpucuları](#hints)
 -  [About 42 / 42 Nedir?](#aboutft)
 -  [License](#license)
-  
-
+<br> <br>
 ## Installation
 
 To get started with StudyHub, follow these steps to install the app locally:
