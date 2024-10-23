@@ -19,6 +19,7 @@
 -  [Hints / İpucuları](#hints)
 -  [About 42 / 42 Nedir?](#aboutft)
 -  [License](#license)
+  
 
 ## Installation
 
