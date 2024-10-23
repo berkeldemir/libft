@@ -7,8 +7,8 @@
 ## Your first lib.</h1>
 ### Sizin yazacağınız ilk kütüphane.
 <img width="221" alt="screenshot" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png">
-In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in further, you will be able to use them in future by basically adding libft to your project root.\n
-42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.
+- [EN] In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in further, you will be able to use them in future by basically adding libft to your project root.
+- [TR] 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.
 
 ## Table of Contents
 - [Installation](#installation)
