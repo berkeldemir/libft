@@ -1,9 +1,9 @@
-# StudyHub App
+# LIBFT
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-[![Project](https://img.shields.io/badge/beldemir/-libft-green)
+![Project](https://img.shields.io/badge/beldemir/-libft-green)
 
-## Your first lib.</h1>
+## Your first library.</h1>
 ### Sizin yazacağınız ilk kütüphane.
 <img width="221" alt="screenshot" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png">
 - [EN] In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in further, you will be able to use them in future by basically adding libft to your project root. <br>
@@ -41,18 +41,16 @@ To get started with StudyHub, follow these steps to install the app locally:
 After installing, you can run the app with the following command:
 
 ```bash
-npm start
+make fclean // first you need to remove if libft.a already created.
+make // create ft_*.o (! ft_lst*.o) files and libft.a
+make clean  // remove *.o files, they've already added to libft.a
 ```
 
-### Explanation:
-- **Title**: Starts with the project’s name and some helpful badges (for build status, license, and version).
-- **Description**: A concise explanation of what the app does.
-- **Table of Contents**: Helps users quickly navigate the README.
-- **Installation**: Step-by-step guide on how to install the app.
-- **Usage**: Provides basic usage instructions and how to run the app.
-- **Features**: Lists the app's key features, describing them briefly.
-- **Screenshots**: Visual examples of the app's UI to give users an idea of what it looks like.
-- **Roadmap**: Future plans and features.
-- **Contributing**: Information on how to contribute to the project, along with some basic Git commands.
-- **Dependencies**: A table showing the major dependencies for the project and their versions.
-- **License**: Information about the project’s license, along with a link to the LICENSE file.
+If you want to also run and check for bonuses: 
+
+```bash
+make fclean // first you need to remove if libft.a already created.
+make // create ft_*.o (! ft_lst*.o) files and libft.a
+make bonus // create ft_lst*.o files and add to libft.a
+make clean // remove *.o files, they've already added to libft.a
+```
