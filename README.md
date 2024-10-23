@@ -25,8 +25,8 @@
 <br> <br>
 ## Installation
 
-<p>You can directly download as a ZIP from up there by clicking green <strong>'code'</strong> button.<p> <br>
-<p>Yukarıdaki yeşil renkli <strong>'code'</strong> bloğuna tıklayarak 'ZIP' formatında indirebilirsiniz.</p>
+**EN:** You can directly download as a ZIP from up there by clicking green <strong>'code'</strong> button. <br>
+**TR:** Yukarıdaki yeşil renkli <strong>'code'</strong> bloğuna tıklayarak 'ZIP' formatında indirebilirsiniz.
 
 ## Usage
 
