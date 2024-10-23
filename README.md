@@ -7,8 +7,8 @@
 ### Sizin yazacağınız ilk kütüphane.
 <img width="221" alt="screenshot" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" style="float: left; width: 30%;">
 
-<p style= "float: right; text-decoration: italic;">**[EN]** In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in future, you will be able to use them by basically adding libft to your project root.<br><p>
-<p style= "float: right; text-decoration: italic;">**[TR]** 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.<p>
+<p style= "float: right; text-decoration: italic;"><<b>[EN]<\b> In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in future, you will be able to use them by basically adding libft to your project root.<br><p>
+<p style= "float: right; text-decoration: italic;"><<b>[TR]<\b> 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.<p>
 
 ## Table of Contents
 - [Installation](#installation)
