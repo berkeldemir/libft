@@ -9,7 +9,7 @@
 <div style="display: flex; align-items: center;">
     <!-- Image on the left -->
     <div style="flex: 1;">
-        <img src="path_to_image/Ekran Resmi 2024-10-23 ÖS 1.24.44.png" alt="Libft Image" style="max-width: 100%;">
+        <img src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" alt="Libft Image" style="max-width: 100%;">
     </div>
     <div style="flex: 1; padding-left: 20px;">
         <h3>Sizin yazacağınız ilk kütüphane.</h3>
