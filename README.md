@@ -1,20 +1,14 @@
-<h1>Your first lib.</h1>
-<h3>Sizin yazacağınız ilk kütüphane.</h3>
-<img width="221" alt="screenshot" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png">
-<p>In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in further, you will be able to use them in future by basically adding libft to your project root.</p>
-
-### Usage
 # StudyHub App
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen)
 
-## Description
-<h1>Your first lib.</h1>
-<h3>Sizin yazacağınız ilk kütüphane.</h3>
+## Your first lib.</h1>
+### Sizin yazacağınız ilk kütüphane.
 <img width="221" alt="screenshot" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png">
-<p>In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in further, you will be able to use them in future by basically adding libft to your project root.</p>
+In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in further, you will be able to use them in future by basically adding libft to your project root.\n
+42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.
 
 ## Table of Contents
 - [Installation](#installation)
