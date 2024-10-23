@@ -3,11 +3,7 @@
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![Project](https://img.shields.io/badge/beldemir/-libft-green)
 
-### Your first library.
-### Sizin yazacağınız ilk kütüphane.
-
-### Your first library.
-### Sizin yazacağınız ilk kütüphane.
+## Your first library. | Sizin yazacağınız ilk kütüphane.
 
 <img align="left" width="300" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" alt="Libft Image">
 
@@ -23,6 +19,7 @@
 -  [Hints / İpucuları](#hints)
 -  [About 42 / 42 Nedir?](#aboutft)
 -  [License](#license)
+-  
 
 ## Installation
 
