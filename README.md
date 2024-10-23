@@ -11,7 +11,7 @@
 
 **TR:** 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.
 
-**----------------------**
+**---------------------**
 <br clear="left"/>
 
 ### <strong>Table of Contents<strong>
@@ -25,20 +25,8 @@
 <br> <br>
 ## Installation
 
-To get started with StudyHub, follow these steps to install the app locally:
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your_username/studyhub-app.git
-    ```
-2. Navigate into the project directory:
-    ```bash
-    cd studyhub-app
-    ```
-3. Install dependencies:
-    ```bash
-    npm install
-    ```
+You can directly download as a ZIP from up there by clicking green 'code' button. <br>
+Yukarıdaki yeşil renkli 'code' bloğuna tıklayarak 'ZIP' formatında indirebilirsiniz.
 
 ## Usage
 
