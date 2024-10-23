@@ -8,3 +8,12 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+### Installation
+Clone the repo and install dependencies:
+```bash
+git clone https://github.com/your_username/project_name.git
+cd project_name
+npm install
+
+### Usage
