@@ -44,7 +44,7 @@ make clean
 If you want to also run and check for bonuses: 
 
 ```bash
-make
+make fclean
 make
 make bonus
 make clean
