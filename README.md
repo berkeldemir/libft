@@ -8,10 +8,10 @@
 
 <div style="display: flex; align-items: center;">
     <!-- Image on the left -->
-    <div style="flex: 1;">
+    <div style="float: left;">
         <img src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" alt="Libft Image" style="max-width: 100%;">
     </div>
-    <div style="flex: 1; padding-left: 20px;">
+    <div style="float: right; padding-left: 20px;">
         <h3>Sizin yazacağınız ilk kütüphane.</h3>
         <p><strong>EN:</strong> In this project of 42 Cursus, you will create your own library. And instead of creating them again and again in the future, you will be able to use them by basically adding libft to your project root.</p>
         <p><strong>TR:</strong> 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.</p>
