@@ -16,7 +16,7 @@
 **TR:** 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.
 
 
-<h3>Table of Contents</h3>
+### <strong>Table of Contents<strong>
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
