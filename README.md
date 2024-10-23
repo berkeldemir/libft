@@ -5,12 +5,13 @@
 
 ## Your first library. | Sizin yazacağınız ilk kütüphane.
 
-<img align="left" width="300" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" alt="Libft Image">
+<img align="left" width="300" style="max-width: 100%; height: auto; margin-right: 20px;" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" alt="Libft Image">
 
 **EN:** In this project of 42 Cursus, you will create your own library. And instead of creating them again and again in the future, you will be able to use them by basically adding libft to your project root.
 
 **TR:** 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.
 
+<br clear="left"/>
 
 ### <strong>Table of Contents<strong>
 -  [Installation / Kurulum](#installation)
@@ -19,6 +20,7 @@
 -  [Hints / İpucuları](#hints)
 -  [About 42 / 42 Nedir?](#aboutft)
 -  [License](#license)
+
 <br> <br>
 ## Installation
 
