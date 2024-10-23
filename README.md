@@ -5,10 +5,19 @@
 
 ### Your first library.
 ### Sizin yazacağınız ilk kütüphane.
-<img width="221" alt="screenshot" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" style="float: left; width: 30%;">
 
-<p style= "float: right; text-decoration: italic;"><<b>[EN]<\b> In this project of 42 Curcus, you will create your own library. And instead of creating them again and again in future, you will be able to use them by basically adding libft to your project root.<br><p>
-<p style= "float: right; text-decoration: italic;"><<b>[TR]<\b> 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.<p>
+<div style="display: flex; align-items: center;">
+    <!-- Image on the left -->
+    <div style="flex: 1;">
+        <img src="path_to_image/Ekran Resmi 2024-10-23 ÖS 1.24.44.png" alt="Libft Image" style="max-width: 100%;">
+    </div>
+    <div style="flex: 1; padding-left: 20px;">
+        <h3>Sizin yazacağınız ilk kütüphane.</h3>
+        <p><strong>EN:</strong> In this project of 42 Cursus, you will create your own library. And instead of creating them again and again in the future, you will be able to use them by basically adding libft to your project root.</p>
+        <p><strong>TR:</strong> 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.</p>
+    </div>
+</div>
+
 
 ## Table of Contents
 - [Installation](#installation)
