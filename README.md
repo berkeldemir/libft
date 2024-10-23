@@ -45,9 +45,9 @@ make
 make
 make clean
 ```
-make fclean // first you need to remove if libft.a already created.
-make // create ft_*.o (! ft_lst*.o) files and libft.a
-make clean  // remove *.o files, they've already added to libft.a
+**make fclean** : first you need to remove if libft.a already created. <br>
+**make** : create ft_*.o (! ft_lst*.o) files and libft.a <br>
+**make clean**  : remove *.o files, they've already added to libft.a
 
 If you want to also run and check for bonuses: 
 
@@ -57,7 +57,7 @@ make
 make bonus
 make clean
 ```
-make fclean // first you need to remove if libft.a already created.
-make // create ft_*.o (! ft_lst*.o) files and libft.a
-make bonus // create ft_lst*.o files and add to libft.a
-make clean // remove *.o files, they've already added to libft.a
+**make fclean** : first you need to remove if libft.a already created.
+**make** : create ft_*.o (! ft_lst*.o) files and libft.a
+**make bonus** : create ft_lst*.o files and add to libft.a
+**make clean** : remove *.o files, they've already added to libft.a
