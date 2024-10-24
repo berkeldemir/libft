@@ -113,12 +113,37 @@ make clean
 
 ## Hints / İpucuları
 
-### 1. ft_memmove VS ft_memcpy 
-| E | C | O | L | E | 4 | 2 | \0 |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 |  7 |
+<strong>1. ft_memmove VS ft_memcpy</strong>
+| E | C | O | L | E | _ | 4 | 2 | \0 |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |  8 |
+| ^ |   |   | ^ |   |   |   |   |    | 
+| s1|   |   | s2|   |   |   |   |    |
 
-Try 
+```c
+ft_memcpy(s2, s1, 5);
+```
+When we apply the code above, what we want to do? <br>
+We want to copy 'ECOLE' to where says 'LE_42' <br>
+Let's go step by step, first: <br>
+'E' is overwrited on 'L' -> 'ECOEE_42' <br>
+'C' -> 'E' -> "ECOEC_42" <br>
+'O' -> '_' -> "ECOECO42" <br>
+'L' -> '4' -> "ECO"... BUT WAIT 'L'? <br>
+It is not 'L' anymore we overwrite 'E' into L. <br>
+So yes, as you see we lost the value of 3rd index. <br>
+<br>
+What if we try it with **ft_memmove**?
+```c
+ft_memmove(s2, s1, 5);
+```
+|   E   |   C   |   O   |   L   |   E   |   _   |   4   |   2   |   \0   |
+|:-----:|:-----:|:-----:|:-****:|:-----:|:-----:|:-----:|:-----:|:------:|
+|   0   |   1   |   2   |   3   |   4   |   5   |   6   |   7   |    8   |
+|   ^   |       |       |   ^   |   ^   |       |       |   ^   |        | 
+|   s1  |       |       |   s2  |s1+len |       |       |s2+len |        |
+
+
    
 3. File Descriptor (fd)
 
