@@ -3,7 +3,7 @@
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![Project](https://img.shields.io/badge/beldemir/-libft-green)
 
-## Your first library. | Sizin yazacağınız ilk kütüphane.
+## Your first library. / Sizin yazacağınız ilk kütüphane.
 
 <img align="left" width="150" style="max-width: 100%; height: auto; margin-right: 20px;" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" alt="Libft Image">
 
@@ -14,7 +14,7 @@
 **---------------------**
 <br clear="left"/>
 
-### <strong>Table of Contents<strong>
+### Table of Contents
 -  [Installation / Kurulum](#installation)
 -  [Usage / Kullanım](#usage)
 -  [Features / Özellikler](#features)
@@ -23,12 +23,12 @@
 -  [License](#license)
 
 <br> <br>
-## Installation
+## Installation / Kurulum
 
 **EN:**  *You can directly download as a ZIP from up there by clicking green <strong>'code'</strong> button.* <br>
 **TR:**  *Yukarıdaki yeşil renkli <strong>'code'</strong> bloğuna tıklayarak 'ZIP' formatında indirebilirsiniz.*
 
-## Usage
+## Usage / Kullanım
 
 After installing, you can run the app with the following command:
 
@@ -54,4 +54,10 @@ make clean
 **make bonus** : create ft_lst*.o files and add to libft.a <br>
 **make clean** : remove *.o files, they've already added to libft.a
 
+## Features / Özellikler
 
+| File / Dosya       | Description / Açıklama        |
+| :----------------: | :---------------------------: |
+| Row 1, Cell 1      | Row 1, Cell 2                 |
+| Row 2, Cell 1      | Row 2, Cell 2                 |
+| Row 3, Cell 1      | Row 3, Cell 2                 |
