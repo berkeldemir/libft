@@ -114,6 +114,7 @@ make clean
 ## Hints / İpucuları
 
 <h3>1. ft_memmove VS ft_memcpy</h3>
+
 | E | C | O | L | E | _ | 4 | 2 | \0 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |  8 |
