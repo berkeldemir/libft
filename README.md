@@ -57,7 +57,7 @@ make clean
 ## Features / Özellikler
 
 | File / Dosya       | Description                         | Açıklama                                      |
-| :----------------: | :---------------------------------: | :--------------------------------------------:|
+| :----------------- | :---------------------------------- | :---------------------------------------------|
 | ft_atoi            | Convert ASCII to Integer            | ASCII değerini bir integer'e çevir            |
 | ft_bzero           | Set n bytes to zero                 | n baytı sıfır olarak ayarla                   |
 | ft_calloc          | Basically malloc, but W/b_zero      | Aslınca malloc, b_zero ile                    |
