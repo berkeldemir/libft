@@ -96,7 +96,7 @@ make clean
 | ft_strmapi         | Apply f to any char of str ret. new | Her karaktere f fonk uygula, yenisini döndür  |
 | ft_strncmp         | Compare n bytes of s1 and s2 strs   | s1 ve s2 stringlerinin n baytını karşılaştır  |
 | ft_strnstr         | Search for s2 in s1 for len bytes   | len bayt boyunca s1'in içinde s2 ara          |
-| ft_strrchr         | ft_strchr but return the last one   | ft_strchr ama bulunan son char'ı döndürür     |
+| ft_strrchr         | ft_strchr but return the last one   | ft_strchr ama bulunan son char'ı döndür       |
 | ft_strtrim         | (5)                                 | (5)                                           |
 | ft_substr          | (6)                                 | (6)                                           |
 | ft_tolower         | Convert lowercase if it is upp.     | Büyük harf ise küçük harfe çevir              |
@@ -107,21 +107,18 @@ make clean
 
 **(B)**: Bonus Functions <br>
 
-**(1)**: ft_memmove function works more tidious then ft_memcpy to do not loose any data. (Please check 'Hints' 1st)
-
-**(1)**: ft_memmove fonksiyonu ft_memcpy'ye kıyasla data kaybetmemek konusunda daha titiz çalışır. ('İpucuları' 1'i inceleyin) <br>
-
-**(2)**: To learn more about File Descriptors (fd's) check out Hinst 2nd.
-
-**(2)**: File Descriptor'lar (fd'ler) hakkında daha fazla bilgi için İpucuları 2'yi inceleyin. <br>
-
-**(3)**: Split the given string s whenever you see the 'c' character and return an array of strings you've splitted.
-
-**(3)**: Verilen string'i 'c' karakterlerinin olduğu yerlerden ayır ve bu ayırdığın stringlerden oluşan bir string dizisi döndür. <br>
-
-**(4)**: dstsize must be given greater than strlen(src) otherwise original and also implementation of mine crushes as it should. And check 'man strlcat' to see return values.
-
-**(4)**: dstsize verilen src'den büyük uzunlukta olmalıdır, aksi taktirde orijinal fonksiyon ve uyarlamam olması gerektiği gibi çökecektir. Döndürülmesi gereken değerleri görmek için 'man strlcat' kullanın. <br>
+**(1)**: ft_memmove function works more tidious then ft_memcpy to do not loose any data. (Please check 'Hints' 1st) <br>
+**(1)**: ft_memmove fonksiyonu ft_memcpy'ye kıyasla data kaybetmemek konusunda daha titiz çalışır. ('İpucuları' 1'i inceleyin) <br> <br>
+**(2)**: To learn more about File Descriptors (fd's) check out Hinst 2nd. <br>
+**(2)**: File Descriptor'lar (fd'ler) hakkında daha fazla bilgi için İpucuları 2'yi inceleyin. <br> <br>
+**(3)**: Split the given string s whenever you see the 'c' character and return an array of strings you've splitted. <br>
+**(3)**: Verilen string'i 'c' karakterlerinin olduğu yerlerden ayır ve bu ayırdığın stringlerden oluşan bir string dizisi döndür. <br> <br>
+**(4)**: dstsize must be given greater than strlen(src) otherwise original and also implementation of mine crushes as it should. And check 'man strlcat' to see return values. <br>
+**(4)**: dstsize verilen src'den büyük uzunlukta olmalıdır, aksi taktirde orijinal fonksiyon ve uyarlamam olması gerektiği gibi çökecektir. Döndürülmesi gereken değerleri görmek için 'man strlcat' kullanın. <br> <br>
+**(5)**: It has two parameters, first one the string to trim and the other one: array of chars will be trimming. Returns a new string which is trimmed from start and end. <br>
+**(5)**: İki parametre alır, ilki kırpılacak string, diğeri kırpılacak karakterler dizisi. Baştan ve sondan bu değerlerle kırpılmış yeni diziyi döndürür. <br> <br>
+**(6)**: It has three parameters, main string, start index, new length. Start from 'start' index and return a new string 'len + 1 (\0)' lenght.
+**(6)**: Üç parametre alır, ana string, başlangıç indexi, yeni uzunluk. 'start' indexinden başlayarak 'len + 1 (\0)' uzunluğunda yeni bir string döndürür.
 
 
 ## Hints / İpucuları
