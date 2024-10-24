@@ -105,15 +105,23 @@ make clean
 | Makefile           | Easier way to create and archive    | Arşiv dosyası oluşturmanın kolay yolu         |
 
 
-(B): Bonus Functions
-(1): ft_memmove function works more tidious then ft_memcpy to do not loose any data. (Please check 'Hints' 1st)
-(1): ft_memmove fonksiyonu ft_memcpy'ye kıyasla data kaybetmemek konusunda daha titiz çalışır. ('İpucuları' 1'i inceleyin)
-(2): To learn more about File Descriptors (fd's) check out Hinst 2nd.
-(2): File Descriptor'lar (fd'ler) hakkında daha fazla bilgi için İpucuları 2'yi inceleyin.
-(3): Split the given string s whenever you see a////////////////////
-(3):
-(4): dstsize must be given greater than strlen(src) otherwise original and also implementation of mine crushes as it should. And check 'man strlcat' to see return values.
-(4): dstsize verilen src'den büyük uzunlukta olmalıdır, aksi taktirde orijinal fonksiyon ve uyarlamam olması gerektiği gibi çökecektir. And check 'man strlcat' to see return values.
+**(B)**: Bonus Functions <br>
+
+**(1)**: ft_memmove function works more tidious then ft_memcpy to do not loose any data. (Please check 'Hints' 1st)
+
+**(1)**: ft_memmove fonksiyonu ft_memcpy'ye kıyasla data kaybetmemek konusunda daha titiz çalışır. ('İpucuları' 1'i inceleyin) <br>
+
+**(2)**: To learn more about File Descriptors (fd's) check out Hinst 2nd.
+
+**(2)**: File Descriptor'lar (fd'ler) hakkında daha fazla bilgi için İpucuları 2'yi inceleyin. <br>
+
+**(3)**: Split the given string s whenever you see the 'c' character and return an array of strings you've splitted.
+
+**(3)**: Verilen string'i 'c' karakterlerinin olduğu yerlerden ayır ve bu ayırdığın stringlerden oluşan bir string dizisi döndür. <br>
+
+**(4)**: dstsize must be given greater than strlen(src) otherwise original and also implementation of mine crushes as it should. And check 'man strlcat' to see return values.
+
+**(4)**: dstsize verilen src'den büyük uzunlukta olmalıdır, aksi taktirde orijinal fonksiyon ve uyarlamam olması gerektiği gibi çökecektir. Döndürülmesi gereken değerleri görmek için 'man strlcat' kullanın. <br>
 
 
 ## Hints / İpucuları
