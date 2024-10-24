@@ -152,7 +152,7 @@ ft_memmove(s2, s1, 5);
 
 Because of dst is greater than src (which means dst comes after src in memory) <br>
 ft_memmove will do the following: <br>
-'E' is going to overwrited at where the '2' is -> '2'
+'E' is going to overwrited at where the '2' is -> '2' <br>
 'L' -> &'4' -> "ECOLE_LE" <br>
 'O' -> &'_' -> "ECOLEOLE" <br>
 'C' -> &'E' -> "ECOLCOLE" <br>
@@ -160,4 +160,5 @@ ft_memmove will do the following: <br>
 <strong>TA DAAAA!</strong><br>
 
 <h3>2. File Descriptor (fd)<h3>
+Guess we all remember about the write() function. Remember
 
