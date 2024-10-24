@@ -13,15 +13,6 @@
 
 **---------------------**
 <br clear="left"/>
-
-### Table of Contents
--  [Installation / Kurulum](#installation)
--  [Usage / Kullanım](#usage)
--  [Features / Özellikler](#features)
--  [Hints / İpucuları](#hints)
--  [About 42 / 42 Nedir?](#aboutft)
--  [License](#license)
-
 <br> <br>
 ## Installation / Kurulum
 
@@ -117,11 +108,13 @@ make clean
 **(4)**: dstsize verilen src'den büyük uzunlukta olmalıdır, aksi taktirde orijinal fonksiyon ve uyarlamam olması gerektiği gibi çökecektir. Döndürülmesi gereken değerleri görmek için 'man strlcat' kullanın. <br> <br>
 **(5)**: It has two parameters, first one the string to trim and the other one: array of chars will be trimming. Returns a new string which is trimmed from start and end. <br>
 **(5)**: İki parametre alır, ilki kırpılacak string, diğeri kırpılacak karakterler dizisi. Baştan ve sondan bu değerlerle kırpılmış yeni diziyi döndürür. <br> <br>
-**(6)**: It has three parameters, main string, start index, new length. Start from 'start' index and return a new string 'len + 1 (\0)' lenght.
-**(6)**: Üç parametre alır, ana string, başlangıç indexi, yeni uzunluk. 'start' indexinden başlayarak 'len + 1 (\0)' uzunluğunda yeni bir string döndürür.
+**(6)**: It has three parameters, main string, start index, new length. Start from 'start' index and return a new string 'len + 1 (\0)' lenght. <br>
+**(6)**: Üç parametre alır, ana string, başlangıç indexi, yeni uzunluk. 'start' indexinden başlayarak 'len + 1 (\0)' uzunluğunda yeni bir string döndürür. <br> <br>
 
 
 ## Hints / İpucuları
 
 1. ft_memmove VS ft_memcpy
+   
+3. File Descriptor (fd)
 
