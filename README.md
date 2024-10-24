@@ -113,7 +113,7 @@ make clean
 
 ## Hints / İpucuları
 
-<strong>1. ft_memmove VS ft_memcpy</strong>
+<h3>1. ft_memmove VS ft_memcpy</h3>
 | E | C | O | L | E | _ | 4 | 2 | \0 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |  8 |
@@ -121,20 +121,25 @@ make clean
 | s1|   |   | s2|   |   |   |   |    |
 
 ```c
+char s1[] = "ECOLE_42";
+char *s2 = &s1[3];
 ft_memcpy(s2, s1, 5);
 ```
 When we apply the code above, what we want to do? <br>
 We want to copy 'ECOLE' to where says 'LE_42' <br>
 Let's go step by step, first: <br>
-'E' is overwrited on 'L' -> 'ECOEE_42' <br>
-'C' -> 'E' -> "ECOEC_42" <br>
-'O' -> '_' -> "ECOECO42" <br>
-'L' -> '4' -> "ECO"... BUT WAIT 'L'? <br>
+'E' is overwrited on &'L' -> 'ECOEE_42' <br>
+'C' -> &'E' -> "ECOEC_42" <br>
+'O' -> &'_' -> "ECOECO42" <br>
+'L' -> &'4' -> "ECO"... BUT WAIT 'L'? <br>
 It is not 'L' anymore we overwrite 'E' into L. <br>
 So yes, as you see we lost the value of 3rd index. <br>
+And result will be: "ECOECOEC" <br>
 <br>
 What if we try it with **ft_memmove**?
 ```c
+char s1[] = "ECOLE_42";
+char *s2 = &s1[3];
 ft_memmove(s2, s1, 5);
 ```
 
@@ -144,7 +149,14 @@ ft_memmove(s2, s1, 5);
 |   ^   |       |       |   ^   |   ^    |       |       |    ^   |        | 
 |   s1  |       |       |   s2  | s1+len |       |       | s2+len |        |
 
+Because of dst is greater than src (which means dst comes after src in memory) <br>
+ft_memmove will do the following: <br>
+'E' is going to overwrited at where the '2' is -> '2'
+'L' -> &'4' -> "ECOLE_LE" <br>
+'O' -> &'_' -> "ECOLEOLE" <br>
+'C' -> &'E' -> "ECOLCOLE" <br>
+'E' -> &'L' -> "ECOECOLE" <br>
+<strong>TA DAAAA!</strong><br>
 
-   
-3. File Descriptor (fd)
+<h3>2. File Descriptor (fd)<h3>
 
