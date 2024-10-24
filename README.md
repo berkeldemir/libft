@@ -13,7 +13,7 @@
 
 **---------------------**
 <br clear="left"/>
-<br> <br>
+<br>
 ## Installation / Kurulum
 
 **EN:**  *You can directly download as a ZIP from up there by clicking green <strong>'code'</strong> button.* <br>
@@ -92,9 +92,8 @@ make clean
 | ft_substr          | (6)                                 | (6)                                           |
 | ft_tolower         | Convert lowercase if it is upp.     | Büyük harf ise küçük harfe çevir              |
 | ft_toupper         | Convert uppercase if it is lowc.    | Küçük harf ise büyük harfe çevir              |
-| libft.h            | Define any funct. and t_list there  | Bütün fonksiyonları ve t_list'i tanımlayın    |
+| libft.h            | Define all functs and t_list there  | Bütün fonksiyonları ve t_list'i tanımlayın    |
 | Makefile           | Easier way to create and archive    | Arşiv dosyası oluşturmanın kolay yolu         |
-
 
 **(B)**: Bonus Functions <br>
 
@@ -114,7 +113,12 @@ make clean
 
 ## Hints / İpucuları
 
-1. ft_memmove VS ft_memcpy
+### 1. ft_memmove VS ft_memcpy 
+| E | C | O | L | E | 4 | 2 | \0 |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |  7 |
+
+Try 
    
 3. File Descriptor (fd)
 
