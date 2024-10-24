@@ -56,8 +56,29 @@ make clean
 
 ## Features / Özellikler
 
-| File / Dosya       | Description / Açıklama        |
-| :----------------: | :---------------------------: |
-| Row 1, Cell 1      | Row 1, Cell 2                 |
-| Row 2, Cell 1      | Row 2, Cell 2                 |
-| Row 3, Cell 1      | Row 3, Cell 2                 |
+| File / Dosya       | Description                         | Açıklama                                      |
+| :----------------: | :---------------------------------: | :--------------------------------------------:|
+| ft_atoi            | Convert ASCII to Integer            | ASCII değerini bir integer'e çevir            |
+| ft_bzero           | Set n bytes to zero                 | n baytı sıfır olarak ayarla                   |
+| ft_calloc          | Basically malloc, but W/b_zero      | Aslınca malloc, b_zero ile                    |
+| ft_isalnum         | Alphabetic or Numeric ? return 1    | Alfabetik ya da numerik ise 1 döndür          |
+| ft_isalpha         | Alphabetic ? return 1               | Alfabetik ise 1 döndür                        |
+| ft_isascii         | ASCII Character ? return 1          | ASCII karakter ise 1 döndür                   |
+| ft_isdigit         | Numeric ? return 1                  | Numerik ise 1 döndür                          | 
+| ft_isprint         | Printable ? return 1                | Yazdırılabilir karakter ise 1 döndür          |
+| ft_itoa            | Convert Integer to String           | Integer değerinden String oluştur             |
+| (B) ft_lstaddback  | Put a node to end of the list       | Listenin sonuna bir node ekle                 |
+| (B) ft_lstaddfront | Put a node to beggining of the list | Listenin başına bir node ekle                 |
+| (B) ft_lstclear    | Clear any node from the list        | Listedeki bütün node'ları sil                 |
+| (B) ft_lstdelone   | Remove a node in a list             | Listedeki bir node'u sil                      |
+| (B) ft_lstiter     | Apply f funct any node (return new) | Listedeki her node'a f uygula, yenisini döndür|
+| (B) ft_lstlast     | Return a pointer to the last node   | Listedeki son node'un adresini döndür         |
+| (B) ft_lstmap      | Apply f funct any node (return same)| Listedeki her node'a f uygula, eskisini döndür|
+| (B) ft_lstnew      | Create a new node module            | Yeni bir node elementi oluştur                |                
+| (B) ft_lstsize     | Return the size of list             | Listedeki node sayısını döndür.               |
+| ft_memchr          | Search n bytes for c int the memory | Hafızada n bayt boyunca 'c' karakterini ara   | 
+| ft_memcmp          | Compare n bytes of s1 and s2        | *s1 ve *s2 tan itibaren n baytı karşılaştır   |
+
+
+
+(B) = Bonus Functions
