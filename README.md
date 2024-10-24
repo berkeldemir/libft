@@ -75,10 +75,48 @@ make clean
 | (B) ft_lstlast     | Return a pointer to the last node   | Listedeki son node'un adresini döndür         |
 | (B) ft_lstmap      | Apply f funct any node (return same)| Listedeki her node'a f uygula, eskisini döndür|
 | (B) ft_lstnew      | Create a new node module            | Yeni bir node elementi oluştur                |                
-| (B) ft_lstsize     | Return the size of list             | Listedeki node sayısını döndür.               |
+| (B) ft_lstsize     | Return the size of list             | Listedeki node sayısını döndür                |
 | ft_memchr          | Search n bytes for c int the memory | Hafızada n bayt boyunca 'c' karakterini ara   | 
-| ft_memcmp          | Compare n bytes of s1 and s2        | *s1 ve *s2 tan itibaren n baytı karşılaştır   |
+| ft_memcmp          | Compare n bytes of *s1 and *s2      | *s1 ve *s2 tan itibaren n baytı karşılaştır   |
+| ft_memcpy          | Copy n bytes from *src to *dst      | *src'den *dst'ye n bayt kopyala               |
+| ft_memmove         | Copy n bytes from *src to *dst (1)  | *src'den *dst'ye n bayt kopyala (1)           |
+| ft_memset          | Set len bytes of *b to c            | *b'den itibaren len byte'ı c olarak ayarla    | 
+| ft_puthcar_fd      | Print given c to file descriptor (2)| File descriptor'a (fd) c karakteri yazdır. (2)|
+| ft_putendl_fd      | Print s string + \n to fd.          | File desc.'a (fd) s stringi + \n yazdır       |
+| ft_putnbr_fd       | Print given integer n to fd.        | Verilen n integerı'nı fd'ye yazdır            |
+| ft_putstr_fd       | Print given string s to fd.         | Verilen s stringi'ni fd'ye yazdır             |
+| ft_split           | (3)                                 | (3)                                           |
+| ft_strchr          | Search for c int in s string        | s stringi'nde c integerı'nı ara               |
+| ft_strdup          | Duplicate given string and ret. new | Verilen stringi kopyala ve yenisi döndür      |
+| ft_striteri        | Apply f to any char of str ret. same| Her karaktere f fonk uygula, eskisini döndür  |
+| ft_strjoin         | Fuse two strings, return new        | İki stringi ucuca ekle, yenisini döndür       |
+| ft_strlcat         | Copy src right next to dst (4)      | src'yi dst'nin hemen sağına kopyala (4)       |
+| ft_strlcpy         | Copy size bytes of src to dest      | src'nin size bayt kadarını dest'e kopyala     |
+| ft_strlen          | Return lengt of given string        | Verilen stringin uzunluğunu döndür            |
+| ft_strmapi         | Apply f to any char of str ret. new | Her karaktere f fonk uygula, yenisini döndür  |
+| ft_strncmp         | Compare n bytes of s1 and s2 strs   | s1 ve s2 stringlerinin n baytını karşılaştır  |
+| ft_strnstr         | Search for s2 in s1 for len bytes   | len bayt boyunca s1'in içinde s2 ara          |
+| ft_strrchr         | ft_strchr but return the last one   | ft_strchr ama bulunan son char'ı döndürür     |
+| ft_strtrim         | (5)                                 | (5)                                           |
+| ft_substr          | (6)                                 | (6)                                           |
+| ft_tolower         | Convert lowercase if it is upp.     | Büyük harf ise küçük harfe çevir              |
+| ft_toupper         | Convert uppercase if it is lowc.    | Küçük harf ise büyük harfe çevir              |
+| libft.h            | Define any funct. and t_list there  | Bütün fonksiyonları ve t_list'i tanımlayın    |
+| Makefile           | Easier way to create and archive    | Arşiv dosyası oluşturmanın kolay yolu         |
 
 
+(B): Bonus Functions
+(1): ft_memmove function works more tidious then ft_memcpy to do not loose any data. (Please check 'Hints' 1st)
+(1): ft_memmove fonksiyonu ft_memcpy'ye kıyasla data kaybetmemek konusunda daha titiz çalışır. ('İpucuları' 1'i inceleyin)
+(2): To learn more about File Descriptors (fd's) check out Hinst 2nd.
+(2): File Descriptor'lar (fd'ler) hakkında daha fazla bilgi için İpucuları 2'yi inceleyin.
+(3): Split the given string s whenever you see a////////////////////
+(3):
+(4): dstsize must be given greater than strlen(src) otherwise original and also implementation of mine crushes as it should. And check 'man strlcat' to see return values.
+(4): dstsize verilen src'den büyük uzunlukta olmalıdır, aksi taktirde orijinal fonksiyon ve uyarlamam olması gerektiği gibi çökecektir. And check 'man strlcat' to see return values.
 
-(B) = Bonus Functions
+
+## Hints / İpucuları
+
+1. ft_memmove VS ft_memcpy
+
