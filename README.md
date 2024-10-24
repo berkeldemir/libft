@@ -33,12 +33,12 @@
 After installing, you can run the app with the following command:
 
 ```bash
-make
+make fclean 
 make
 make clean
 ```
 **make fclean** : first you need to remove if libft.a already created. <br>
-**make** : create ft_*.o (! ft_lst*.o) files and libft.a <br>
+**make** : create ft_\*.o (! ft_lst\*.o) files and libft.a <br>
 **make clean**  : remove *.o files, they've already added to libft.a
 
 If you want to also run and check for bonuses: 
