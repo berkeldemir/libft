@@ -6,11 +6,25 @@
 /*   By: beldemir <beldemir@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:39:31 by beldemir          #+#    #+#             */
-/*   Updated: 2024/10/21 14:04:04 by beldemir         ###   ########.fr       */
+/*   Updated: 2024/11/05 13:18:23 by beldemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	*delete(char **s, int len)
+{
+	int	i;
+
+	i = 0;
+	while (i < len)
+	{
+		free(s[i]);
+		i++;
+	}
+	free (s);
+	return (NULL);
+}
 
 static int	ft_count_words(char const *s, char sep)
 {
@@ -28,16 +42,12 @@ static int	ft_count_words(char const *s, char sep)
 	return (count);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**ft_split_while(char const *s, char c, char **words)
 {
-	char	**words;
 	size_t	word_len;
-	size_t	i;
+	int		i;
 
 	i = 0;
-	words = (char **)malloc((ft_count_words(s, c) + 1) * sizeof(char *));
-	if (words == NULL)
-		return (NULL);
 	while (*s)
 	{
 		while (*s == c && *s)
@@ -49,10 +59,23 @@ char	**ft_split(char const *s, char c)
 			else
 				word_len = ft_strchr(s, c) - s;
 			words[i] = ft_substr(s, 0, word_len);
+			if (!words[i])
+				return (delete(words, i));
 			i++;
 			s += word_len;
 		}
 	}
 	words[i] = NULL;
+	return (words);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**words;
+
+	words = (char **)malloc((ft_count_words(s, c) + 1) * sizeof(char *));
+	if (words == NULL)
+		return (NULL);
+	words = ft_split_while(s, c, words);
 	return (words);
 }
