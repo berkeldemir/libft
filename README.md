@@ -1,11 +1,11 @@
-<img align="left" width="100%" style="max-width: 100%;" src="https://github.com/berkeldemir/libft/blob/main/srcs/42-libft.png?raw=true" alt="42-libft">
+<img align="left" width="100%" style="max-width: 100%;" src="https://github.com/berkeldemir/libft/blob/main/42-libft.png?raw=true" alt="42-libft">
 
 <br clear="left"/>
 <br>
 
 ## Your first library. / Sizin yazacağınız ilk kütüphane.
 
-<img align="left" width="150" style="max-width: 100%; height: auto; margin-right: 20px;" src="https://github.com/berkeldemir/libft/blob/main/srcs/screenshot.png" alt="Libft Image">
+<img align="left" width="150" style="max-width: 100%; height: auto; margin-right: 20px;" src="https://github.com/berkeldemir/libft/blob/main/screenshot.png?raw=true" alt="score">
 
 **EN:** In this project of 42 Cursus, you will create your own library. And instead of creating them again and again in the future, you will be able to use them by basically adding libft to your project root.
 
