@@ -157,15 +157,18 @@ ft_memmove will do the following: <br>
 'E' -> &'L' -> "ECOECOLE" <br>
 <strong>TA DAAAA!</strong><br>
 
-<h3>2. File Descriptor (fd)<h3>
+<h3>2. File Descriptor (fd)</h3>
 Guess we all remember about the write() function. Remember it prints some characters on terminal output, if you use it as *write(1, &<some_string>, <len_of_string>);*
 What does 1 means here? -> STDOUT (Standart Output, which means the terminal in usage.)
 What else it can get?
+<br>
 
-| 0   | reading input from keyboard                 |
-| 1   | writing normal output, to the terminal      |
-| 2   | writing error mesages to standart error     |
-| fd  | any other file descriptor to write in file. |
+|  fd  | DESCRIPTION                                 |
+|:----:|:-------------------------------------------:|
+| 0    | reading input from keyboard                 |
+| 1    | writing normal output, to the terminal      |
+| 2    | writing error mesages to standart error     |
+| file | any other file descriptor to write in file. |
     
 ```c
 #include <fcntl.h>
@@ -180,5 +183,10 @@ int  main(void)
   write(fd, "Fascinating!", 12);
 }
 ```
-This code above looks for a file called file.txt in the current directory and if it does not exist, it creates it (O_CREAT) with 777 permissions, then opens it only write mode (O_WRITE), if there is anything in file cleans it (O_TRUNC) and finally puts the text inside file.
-All of the *_fd.c files in this project does the same basically, puts a string to the file. But of course it is on you to change it anything you want, if you give 1 it will give output on stdout etc.
+- This code above looks for a file called file.txt in the current directory and;
+- if it does not exist, it creates it (O_CREAT) with 777 permissions,
+- then opens it only write mode (O_WRONLY),
+- any existing content in the file will be deleted (O_TRUNC),
+- and finally puts the text inside file.
+<br>
+All of the *_fd.c files in this project does the same basically, puts a string to the file. But of course it is on you to change it as anything you want, if you give 1 it will give output on stdout etc.
