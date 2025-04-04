@@ -1,12 +1,10 @@
 <img align="left" width="100%" style="max-width: 100%;" src="https://github.com/berkeldemir/libft/blob/main/42-libft.png?raw=true" alt="42-libft">
-
 <br clear="left"/>
 <br>
 
 ## Your first library. / Sizin yazacağınız ilk kütüphane.
 
 <img align="left" width="150" style="max-width: 100%; height: auto; margin-right: 20px;" src="https://github.com/berkeldemir/libft/blob/main/score.png?raw=true" alt="score">
-
 **EN:** In this project of 42 Cursus, you will create your own library. And instead of creating them again and again in the future, you will be able to use them by basically adding libft to your project root.
 
 **TR:** 42 Ana Müfredatın ilk projesi olan libft'de kendi kütüphanenizi oluşturacaksınız. Ve daha sonra yazacağınız projelerde, her bir fonksiyonu tek tek baştan yazmak yerine libft'yi projenize ekleyerek kolayca kullanabilir hale geleceksiniz.
@@ -160,5 +158,27 @@ ft_memmove will do the following: <br>
 <strong>TA DAAAA!</strong><br>
 
 <h3>2. File Descriptor (fd)<h3>
-Guess we all remember about the write() function. Remember
+Guess we all remember about the write() function. Remember it prints some characters on terminal output, if you use it as *write(1, &<some_string>, <len_of_string>);*
+What does 1 means here? -> STDOUT (Standart Output, which means the terminal in usage.)
+What else it can get?
 
+| 0   | reading input from keyboard                 |
+| 1   | writing normal output, to the terminal      |
+| 2   | writing error mesages to standart error     |
+| fd  | any other file descriptor to write in file. |
+    
+```c
+#include <fcntl.h>
+
+int  main(void)
+{
+  int  fd;
+
+  fd = open("file.txt", O_WRONLY | O_CREAT | O_TRUNC, 0777);
+  if (fd == -1)
+    return (1);
+  write(fd, "Fascinating!", 12);
+}
+```
+This code above looks for a file called file.txt in the current directory and if it does not exist, it creates it (O_CREAT) with 777 permissions, then opens it only write mode (O_WRITE), if there is anything in file cleans it (O_TRUNC) and finally puts the text inside file.
+All of the *_fd.c files in this project does the same basically, puts a string to the file. But of course it is on you to change it anything you want, if you give 1 it will give output on stdout etc.
